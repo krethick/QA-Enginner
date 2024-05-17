@@ -383,14 +383,22 @@ article .icon {
    cursor: default;
 }
 
+
 .progress-bar-container {
    width: 100%;
-   height: 10px; /* Set the height of the progress bar container */
-   background-color: #ddd; /* Background color for the progress bar container */
    margin-top: 5px; /* Adjust margin as needed */
    overflow: hidden; /* Hide overflow to clip the gradient */
-   
 }
+
+/*
+.progress-bar-container {
+   width: 100%;
+   height: 10px; // Set the height of the progress bar container 
+   background-color: #ddd; // Background color for the progress bar container 
+   margin-top: 5px; // Adjust margin as needed 
+   overflow: hidden; // Hide overflow to clip the gradient 
+}
+*/
 
 
 .progress-bar {
