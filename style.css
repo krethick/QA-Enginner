@@ -322,6 +322,7 @@ section{
    top: 21.5rem;
 }
 
+
 .details-container{
    padding: 1.5rem;
    flex:1;
@@ -490,6 +491,12 @@ article .icon {
 #projects1{
    position: relative;
    height: 960px;
+}
+
+#projects2{
+   position: relative;
+   height: 960px;
+   width: 300px;
 }
 
 .color-container{
