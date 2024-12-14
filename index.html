@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body> 
+   <div class="hero">
+       <video autoplay loop muted plays-inline class="back-video">
+           <source src="./assets/Projects/video1.mp4" type="video/mp4">
+       </video>
+
+   </div>
    <nav id="desktop-nav"> <!--nav is used for navigation-->
        <div class="logo">Welcome to my Portfolio</div>
        <div>
@@ -101,18 +107,19 @@
             alt="experience icon"
             class="icon"
             />
-             <h3>Experience</h3>
+             <h3>Experience</h3> 
+             <br>
              <!--<img src="./assets/byjus.png" alt="Byjus Logo" width="50" height="50">-->
-            <p>BYJU'S</p>
+            <strong>BYJU'S</strong>
             <p> Game Developer (Internship)</p>
             <p> Dec 2020 - June 2021</p>
            <br>
            <!-- <img src="./assets/byjus.png" alt="Byjus Logo" width="50" height="50">-->
-            <p>BYJU'S</p>
+            <strong>BYJU'S</strong>
             <p> Junior Game Developer (Fulltime)</p>
             <p> Feb 2022 - Dec 2022</p>
             <br>
-            <p>Adriotts</p>
+            <strong>Adriotts</strong>
             <p> Full Stack Developer (Internship)</p>
             <p> Jan 2023 - Aug 2023</p>
         </div>
@@ -122,7 +129,8 @@
           class="icon"
           />
           <h3>Education</h3>
-          <p>Christ (Deemed to be University)</p>
+          <br>
+          <strong>Christ (Deemed to be University)</strong>
           <p>Bachelor of Computer Applications</p>
           <p> June 2018 - May 2021</p>
         </div>
@@ -450,11 +458,11 @@
     </div>
       </div>
       
-      <!--<img src="./assets/arrow.png" 
+      <!-- <img src="./assets/arrow.png" 
       alt="Arrow icon" 
       class="icon arrow" 
       onclick="location.href='./#projects'"
-      />-->
+      /> -->
     </section>
     <section id="projects1">
       <div class="experience-details-container">
@@ -509,6 +517,8 @@
         </ul>
          </div>
       </div>
+
+      
       
        <div class="details-container color-container">
           <div class="article-container">
@@ -527,12 +537,103 @@
       </div>
     </div>
       </div>
-      <img src="./assets/arrow.png" 
+      <!-- <img src="./assets/arrow.png" 
       alt="Arrow icon" 
       class="icon arrow" 
       onclick="location.href='./#Art-work'"
-      />
+      /> -->
       </section>
+
+      <section id="projects1">
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <iframe width="360" height="320"
+                src="./assets/Projects/AI_game.mp4" 
+               frameborder="0"
+              allowfullscreen>
+      </iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">Classy Clash (2024)</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/krethick/Classy-Clash'">
+                  Github
+                </button>
+              </div>
+              <div class="text-container">
+              </br> 
+              <ul class="snake-content">
+                <li>A small tile map game using C++ and RayLib.</li>
+                <li>Included basic AI Movement of enemies.</li>
+                <li>When enemies comes near the player the health decreases.</li>
+                <li>The map has been created using the Tiled Software.</li>
+                <br>
+                <strong>Role:</strong> Solo Project
+            </ul>
+            </div>
+            </div>
+        <div class="details-container color-container">
+            <div class="article-container1">
+              <iframe width="360" height="320"
+                src="./assets/Projects/William_Butcher.mp4" 
+               frameborder="0"
+              allowfullscreen>
+      </iframe>
+            </div>
+            <h2 class="experience-sub-title project-title1">Butcher (2024)</h2>
+            <div class="text-container"> 
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn1" onclick="location.href='https://github.com/krethick/Butcher'">
+                  Github
+                </button>   
+              </div>
+            <ul class="snake-content">
+              <li>I drew inspiration from the character William Butcher from The Boys series.</li>
+              <li>Developed the Character and its animation using Adobe Fuse CC and Maximo .</li>
+              <li>A third-person game where the player uses laser vision to destroy enemies.</li>
+              <li>Implemented basic functionality using Unity and C#(In Development)</li>
+              <br>
+              <strong>Role:</strong> Solo Project(Byog Game Jam)
+             
+          </ul>
+           </div>
+        </div>
+  
+        
+        
+         <div class="details-container color-container">
+          <div class="article-container1">
+            <iframe width="360" height="320"
+              src="./assets/Projects/Rocket_Boost.mp4" 
+             frameborder="0"
+            allowfullscreen>
+          </iframe>
+          <h2 class="experience-sub-title project-title1">Rocket Boost (2024)</h2>
+          <div class="text-container"> 
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn1" onclick="location.href='https://github.com/krethick/Rocket-Jump/tree/main/Rocket_Jump'">
+                Github
+              </button>   
+            </div>
+          <ul class="snake-content">
+            <li>Player should skillfully fly a spaceship and avoid environmental hazards.</li>
+            <li>Go from the starting point to the ending point to complete the level, then progress to the next level.</li>
+            <li>Completed the game using Unity and C#.</li>
+            <li>Implemented Oscillation Logic using Mathf.Sin().</li>
+            <br>
+            <strong>Role:</strong> Solo Project 
+          </ul>
+          </div>
+        </div>
+      </div>
+        </div>
+          <img src="./assets/arrow.png" 
+          alt="Arrow icon" 
+          class="icon arrow" 
+          onclick="location.href='./#Art-work'"
+          />
+          </section>
     <section id="Art-work">
       <P class="section__text__p1">Blender</P>
       <h1 class="title">Art Work</h1>
@@ -785,7 +886,7 @@
             </div>
             <div class="details-container1 color-container">
               <div class="article-container2">
-                <img src="./assets/Good-Times/12.jpeg" alt="Project 1" class="project-img" width="312" height="350"/>
+                <img src="./assets/Good-Times/12.JPG" alt="Project 1" class="project-img" width="312" height="350"/>
               </div>
               <h2 class="experience-sub-title project-title"></h2>
               <div class="btn-container">
