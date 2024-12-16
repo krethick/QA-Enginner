@@ -253,7 +253,9 @@ section{
 
 .section__text__p1{
    text-align: center;
-   color: rgba(87, 24, 24, 0.767);
+   font-weight: 999;
+   font-size: 1.23rem;
+   color: rgb(99, 16, 16);
 }
 
 .section__text__p2{
@@ -514,7 +516,7 @@ article .icon {
 }
 
 .text-container24{
-   margin-right: 11px; 
+   margin-right: 69px; 
 }
 
 .text-container25{
@@ -610,6 +612,12 @@ width: 350px;
 height: 316px;
 
 }
+
+.article-container2{
+   width: 350px;
+   height: 316px;
+   
+   }
 
 
 /* Art SECTION */
