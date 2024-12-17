@@ -40,18 +40,21 @@
     .experience-details-container{
         margin-top: 2rem;
         margin-bottom: 70px;
+        margin-left: 7px;
     }
 
     #projects1,
     .experience-details-container{
         margin-top: 2rem;
         margin-bottom: 70px;
+        margin-left: 7px;
     }
 
     #projects1,
     .experience-details-container{
         margin-top: 2rem;
         margin-bottom: 70px;
+        margin-left: 7px;
         
     }
  
@@ -195,3 +198,80 @@
             margin-right: 9.5px;
         }
     }
+
+  /* Splash Screen */
+.splash{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 500vh;
+    background: black;
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    overflow: hidden;
+ }
+ 
+ .splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: -10;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+ }
+ 
+ @keyframes fadeIn{
+    to{
+       opacity: 1 ;
+    }
+ }
+ 
+ .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    font-weight: 900;
+    font-size: 6px; /* Increase font size for better visibility */
+    color: white; /* Ensure text color is visible on dark background */
+    line-height: 1.5; /* Improve readability */
+}
+ 
+ .Continue {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.5rem;
+    width: 8rem;
+    border-radius: 2rem;
+    position: fixed; 
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: grey; 
+    border: none;
+    font-size: 6px;
+    cursor: pointer;
+    font-style: italic;
+    color: #080303;
+ }
+ 
+ .Continue:hover{
+    background: rgb(195, 102, 102);
+ }
+
+ .Volunteer{
+    color:rgb(23, 2, 2);
+    font-size: 1rem;
+    
+ }
+
+   

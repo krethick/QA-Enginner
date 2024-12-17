@@ -930,7 +930,8 @@ height: 316px;
 /* Volunteer text */
 .Volunteer{
    color:rgb(23, 2, 2);
-   font-size: 1.19rem;
+   font-size: 1.3rem;
+   font-weight: 600;
 }
 
 /* Splash Screen */
