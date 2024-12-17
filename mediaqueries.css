@@ -200,7 +200,7 @@
     }
 
   /* Splash Screen */
-.splash{
+/* .splash{
     position: fixed;
     top:0;
     left:0;
@@ -266,7 +266,7 @@
  
  .Continue:hover{
     background: rgb(195, 102, 102);
- }
+ } */
 
  .Volunteer{
     color:rgb(23, 2, 2);
