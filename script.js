@@ -121,12 +121,26 @@ function showModal(imageSrc, altText) {
     modal.style.display = 'block';
   }
 
+  
+
 // Splash
 const splash = document.querySelector('.splash');
 
 function closeSplash() {
   splash.classList.add('display-none');
 }
+
+// Mute the rocket boost video
+document.getElementById('videoFrame').addEventListener('load', function () {
+  const iframe = document.getElementById('videoFrame');
+  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+  // Try to mute the video if the iframe content is accessible
+  if (iframeDoc) {
+    const video = iframeDoc.querySelector('video');
+    if (video) video.muted = true;
+  }
+});
 
 
 document.addEventListener('DOMContentLoaded', (e) => {
