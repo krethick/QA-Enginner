@@ -121,6 +121,10 @@ function showModal(imageSrc, altText) {
     modal.style.display = 'block';
   }
 
+ function closeModal6() {
+    var modal = document.getElementById('myModal6');
+    modal.style.display = 'none';
+  }
   
 
 // Splash
