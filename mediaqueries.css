@@ -1,316 +1,210 @@
-/* ==============================================
-   PORTFOLIO MEDIA QUERIES
-   - Mobile-first responsive design
-   - Covers all screen sizes (320px to 4K)
-   - Perfectly complements the updated style.css
-============================================== */
+@media screen and (max-width: 1400px){
+    #profile {
+        height: 83vh;
+        margin-bottom: 2rem;
+    }
 
-/* ----------------------------
-   Extra Small Devices (Below 576px)
----------------------------- */
-@media screen and (max-width: 575px) {
-    /* Typography */
-    .logo {
-      font-size: 1.5rem;
+    .about container {
+        flex-wrap: wrap;
     }
-    .title {
-      font-size: 2rem;
-    }
-    .section__text__p1 {
-      font-size: 1rem;
-    }
-    .section__text__p2 {
-      font-size: 1.2rem;
-    }
-  
-    /* Profile section */
-    #profile {
-      flex-direction: column;
-      height: auto;
-      padding: 3rem 0;
-      gap: 2rem;
-    }
-    
-    .section__pic-container {
-      width: 200px;
-      height: 200px;
-    }
-    
-    /* Navigation */
-    .nav-links {
-      font-size: 1.2rem;
-      gap: 1rem;
-    }
-    
-    /* Buttons */
-    .btn-container {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .btn {
-      width: 100%;
-    }
-    
-    /* Content containers */
-    .about-containers, 
-    .contact-info-upper-container {
-      grid-template-columns: 1fr;
-    }
-    
-    .details-container {
-      padding: 1.5rem;
-    }
-    
-    /* Contact section */
-    .contact-info-container {
-      margin: 0.5rem;
-    }
-    .contact-info-container p {
-      font-size: 1rem;
-    }
-    
-    /* Footer */
-    footer nav {
-      height: fit-content;
-    }
-    
-    .nav-links {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    
-    /* Modal */
-    .modal-content {
-      max-width: 95%;
-    }
-  }
-  
-  /* ----------------------------
-     Small Mobile Devices (576px-767px)
-  ---------------------------- */
-  @media screen and (min-width: 576px) and (max-width: 767px) {
-    /* Layout */
-    #contact,
-    footer {
-      height: auto;
-      padding: 2rem 0;
-    }
-  
-    /* Navigation */
-    .nav-links {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    /* Buttons */
-    .btn-container {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .btn {
-      width: 100%;
-    }
-  
-    /* Project items */
-    .details-container {
-      width: 100%;
-    }
-    
-    /* Profile section */
-    #profile {
-      flex-direction: column;
-      gap: 3rem;
-      height: auto;
-      padding: 4rem 0;
-    }
-    
-    .section__pic-container {
-      width: 250px;
-      height: 250px;
-    }
-  }
-  
-  /* ----------------------------
-     Small Tablets (768px-991px)
-  ---------------------------- */
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    /* Typography */
-    .title {
-      font-size: 2.5rem;
-    }
-    .section__text__p2 {
-      font-size: 1.5rem;
-    }
-  
-    /* Profile image */
-    .section__pic-container {
-      width: 300px;
-      height: 300px;
-    }
-  
-    /* Content blocks */
-    .details-container {
-      padding: 1.5rem;
-    }
-    
-    /* Switch to mobile nav */
+}
+
+
+
+
+@media screen and (max-width: 1200px){
     #desktop-nav {
-      display: none;
+        display: none;
     }
-    #hamburger-nav {
-      display: flex;
+
+    /* Content is showed in the hambuger-nav when 
+    desktop is disabled */
+     
+    #hamburger-nav{
+        display: flex;
     }
-  }
-  
-  /* ----------------------------
-     Tablets/Landscape Mobile (992px-1199px)
-  ---------------------------- */
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    /* Switch to mobile nav */
-    #desktop-nav {
-      display: none;
+
+    
+    #about
+    {
+        margin-top: 1px; 
+
     }
-    #hamburger-nav {
-      display: flex;
-    }
-  
-    /* Section adjustments */
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-  
-    /* Profile section */
-    .section__pic-container {
-      width: 300px;
-      height: 300px;
-      margin: 0 auto 2rem;
-    }
-  
-    /* Content containers */
-    .about-containers {
-      margin-top: 0;
-    }
-  
-    /* Specific section heights */
     #experience,
+    .experience-details-container{
+        margin-top: 2rem;
+        margin-bottom: 70px;
+    }
+
     #projects,
-    #projects1 {
-      height: fit-content;
-      margin: 2rem 0;
+    .experience-details-container{
+        margin-top: 2rem;
+        margin-bottom: 70px;
+        margin-left: 7px;
     }
-  }
+
+    #projects1,
+    .experience-details-container{
+        margin-top: 2rem;
+        margin-bottom: 70px;
+        margin-left: 7px;
+    }
+
+    #projects1,
+    .experience-details-container{
+        margin-top: 2rem;
+        margin-bottom: 70px;
+        margin-left: 7px;
+        
+    }
+ 
+   /* This belongs to the rocketboost article-container9 */
+    .article-container9{
+        margin-top: 2rem;
+        margin-bottom: 70px;
+        
+    }
+    
   
-  /* ----------------------------
-     Large Desktops (1200px-1599px)
-  ---------------------------- */
-  @media screen and (min-width: 1200px) and (max-width: 1599px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
+
+ 
+    #Art-work, .experience-details-container{
+        margin-top: 7rem;
+        margin-bottom: 50px;
+        
     }
-    .about-containers {
-      flex-wrap: wrap;
+
+    #Art-work1, .experience-details-container{
+        margin-top: -5rem;
+        margin-bottom: 50px;
     }
-  }
+
+    #Art-work2, .experience-details-container{
+        margin-top: 2rem;
+        margin-bottom: 70px;
+    }
+
+    #Volunteering, .experience-details-container{
+        margin-top: 2rem;
+        margin-bottom: 70px;
+    }
+
+    #Volunteering1, .experience-details-container{
+        margin-top: 2rem;
+        margin-bottom: 70px;
+    }
+
   
-  /* ----------------------------
-     Extra Large Desktops (1600px+)
-  ---------------------------- */
-  @media screen and (min-width: 1600px) {
-    /* Layout */
-    .container {
-      max-width: 1800px;
-      padding: 0 5%;
+
+    #profile,
+        .section-container{
+           display: block;
+        }
+
+     .arrow{
+        display: none;
+     }
+
+     section,
+     .section-container{
+        height: fit-content;
+     }
+
+     section{
+        margin: 0 5%;
+     }
+
+     .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+     }
+
+     .about-containers{
+        margin-top: 0;
+     }
     }
+
+    @media screen and (max-width: 600px){
+        #contact,
+        footer{
+            height: 40vh;
+        }
+
+        #profile{
+            height: 83vh;
+            margin-bottom: 0;
+        }
+
+        article{
+            font-size: 1rem;
+        }
+
+        footer nav{
+            height: fit-content;
+            margin-bottom: 2rem;
+        }
+
+        .about-containers, 
+        .contact-info-upper-container, 
+        .btn-container, .btn-container1{
+           flex-wrap: wrap;
+        }
+
+        .contact-info-container{
+            margin:0;
+        }
+
+        .contact-info-container p,
+        .nav-links li a {
+            font-size: 1rem;
+        }
+
+        .experience-sub-title{
+            font-size: 1.25rem;
+        }
+
+        .logo{
+            font-size: 1.5rem;
+        }
+
+        .nav-links{
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: center;
+        }
+
+        .section__pic-container{
+            width: auto;
+            height: 46vw;
+            justify-content: center;
+        }
+
+        .section__text__p2{
+            font-size: 1.25rem;
+        }
+
+        .title{
+            font-size: 2rem;
+           
+        }
+
+        .text-container{
+            text-align:justify;
+        }
+
+        #contact, .contact-info-container
+        {
+            margin-right: 9.5px;
+        }
+    }
+
   
-    /* Navigation */
-    nav {
-      padding: 0 8%;
-    }
-    .nav-links {
-      gap: 4rem;
-    }
-    .logo {
-      font-size: 2.5rem;
-    }
-  
-    /* Sections */
-    section {
-      max-width: 1500px;
-    }
-  
-    /* Profile Section */
-    #profile {
-      gap: 10rem;
-    }
-    .section__pic-container {
-      height: 500px;
-      width: 500px;
-    }
-  
-    /* Project Grid */
-    .about-containers {
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 3rem;
-    }
-    .details-container {
-      max-width: 450px;
-      padding: 2rem;
-    }
-  
-    /* Typography */
-    .title {
-      font-size: 3.5rem;
-    }
-    .section__text__p2 {
-      font-size: 2rem;
-    }
-  }
-  
-  /* ----------------------------
-     4K and Ultra-Wide Screens (2560px+)
-  ---------------------------- */
-  @media screen and (min-width: 2560px) {
-    .container {
-      max-width: 2400px;
-    }
-    .section__pic-container {
-      height: 600px;
-      width: 600px;
-    }
-    .title {
-      font-size: 4rem;
-    }
-    .nav-links {
-      font-size: 2rem;
-      gap: 6rem;
-    }
-  }
-  
-  /* ----------------------------
-     Landscape Orientation Adjustments
-  ---------------------------- */
-  @media screen and (max-height: 700px) and (orientation: landscape) {
-    #profile {
-      height: auto;
-      padding-bottom: 6rem;
-    }
-    .section__pic-container {
-      width: 200px;
-      height: 200px;
-    }
-    .details-container {
-      padding: 1rem;
-    }
-  }
+
+ .Volunteer{
+    color:rgb(23, 2, 2);
+    font-size: 1rem;
+    
+ }
+
+   
